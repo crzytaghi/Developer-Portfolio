@@ -11,8 +11,8 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 bd-sidebar" id="stick-sidebar">
+      <div class="row flex-xl-nowrap">
+        <div class="col-sm-3 col-xl-2 bd-sidebar" id="stick-sidebar">
           <div class="sticky-top">
             <div id="list-example" class="list-group mt-5">
               <a class="list-group-item list-group-item-action" href="#about">About</a>
@@ -22,89 +22,110 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-8 bd-content">
+        <div class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
           <div class="main">
             <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy">
-              <div id="about">
-                <h3>About</h3>
-                <p>My name is Andrew Taghi and I am a motivated Software Engineer who loves to find simple solutions to complex issues. From a dedicated client focused platform that increased sales by nearly 700% to a robust invoicing solution that increased UX and traffic by approximately 300%. I am driven by goals I set forth for myself having a supportive team to collaborate with. My goal moving forward is to continue to find solutions to complex issues. </p>
-              </div>
-              <div id="projects">
-                <h3>Projects</h3>
-                <section>
-                  <h4>Quarantine Trivia</h4>
-                  <a target="_blank" href="https://crzytaghi.github.io/">Quarantine Trivia</a>
-                  <p>Feeling board during the 2020 Quarantine, test your trivia knowledge with this app! Utilizing jQuery, JavaScript, CSS, and HTML pulling random or selected questionnaires from an external API.</p>
-                </section>
-                <section>
-                  <h4>Recipe App</h4>
-                  <a target="_blank" href="https://vast-cliffs-63410.herokuapp.com/recipe">Recipe App</a>
-                  <p>This recipe app is a great place for you to collaborate with friends and family on your favorite recipes. Simply create a profile and begin adding! A full stack application hosted on Heroku, utilizing Express, Node.js, Mongoose, MongoDB, EJS, and jQuery utilizing REST API routes.</p>
-                </section>
-                <section>
-                  <h4>Board's Up</h4>
-                  <a target="_blank" href="https://boardsup.herokuapp.com/">Board's Up</a>
-                  <p>Board's Up is a place to store and locate your favorite skate/surf/snowboard spots. A full stack application integrated with Google Maps API, utlizing AngularJS, Mongoose, and Node.js</p>
-                </section>
-              </div>
-            </div>
-            <div id="experience">
-              <h3>Experience</h3>
-              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="d-block w-100">
-                      <h4>RigUp</h4>
-                      <h5>Customer Success Manager / Program Manager</h5>
-                      <ul>
-                        <li>Built and grew the RigUp Connect program from $1.1M/month in revenue to ~$6.5M/month, tailoring specific accounts to benefit each client individually</li>
-                        <li>Collaborated with product/engineering team to build a new client-facing invoicing portal based on customer feedback and input, decreasing internal administrative time by 60%</li>
-                        <li>Spearheaded the sale and initial growth of a major account from $17,000 to $350,000 a month over a 6-month period, increasing client efficiency while decreasing spend within specific divisions</li>
-                        <li>Collaborated cross-functionally with product/engineering and sales teams to update product features that enhanced UX and enabled more user functionality, increasing traffic by 300%</li>
-                        <li>Responsible for the growth of vendor user base, with 62 net new vendors submitting invoices for payment in 2019, totaling ~$2.3M in net revenue</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="d-block w-100">
-                      <h4>Halliburton</h4>
-                      <h5>Engineer</h5>
-                      <ul>
-                        <li>Conducted onsite supervision of the Measurement-While-Drilling (MWD) process, including tool preparations, data acquisition, log generation and Quality Control (QC), and delivery of services to the customer</li>
-                        <li>Implemented an Excel program to collect large datasets from different locations and automate spreadsheet creation, saving time and eliminating potential for human error</li>
-                        <li>Provided client with real-time analytical reports on current drilling parameters to ensure all equipment onsite was functioning properly, limiting costly downtime</li>
-                        <li>Increased revenue quarter-over-quarter by offering advanced analytical and downhole tools to the client, selling a more robust end product and increased drilling efficiency across all aspects of drilling operations</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="d-block w-100">
-                      <h4>Range Resources</h4>
-                      <h5>Operations Engineer</h5>
-                      <ul>
-                        <li>Achieved full-time position of Ops Engineer after successfully completing a 3-month internship</li>
-                        <li>Analyzed well files and implemented a plan of action, increasing production by 20% across a 6-month period</li>
-                        <li>Observed that installing a new pump could cost ~$65K and determined the most cost-efficient routes to bring wells back online after analyzing past records of assets, presenting findings to management</li>
-                        <li>Worked with a region’s main engineer to monitor function and performance of oil wells based on daily incoming metrics; noted any underperforming wells and communicated with foreman to solve the issue and improve production</li>
-                      </ul>
-                    </div>
-                  </div>
+              <div id="about" class="jumbotron">
+                <div class="jumbotron">
+                  <h3>About</h3>
+                  <p>My name is Andrew Taghi and I am a motivated Software Engineer who loves to find simple solutions to complex issues. From a dedicated client focused platform that increased sales by nearly 700% to a robust invoicing solution that increased UX and traffic by approximately 300%. I am driven by goals I set forth for myself having a supportive team to collaborate with. My goal moving forward is to continue to find solutions to complex issues. </p>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+
+              </div>
+              <div id="projects" class="jumbotron">
+                <div class="jumbotron">
+                  <h3>Projects</h3>
+                  <section>
+                    <h4>Quarantine Trivia</h4>
+                    <a target="_blank" href="https://crzytaghi.github.io/">Quarantine Trivia</a>
+                    <p>Feeling board during the 2020 Quarantine, test your trivia knowledge with this app! Utilizing jQuery, JavaScript, CSS, and HTML pulling random or selected questionnaires from an external API.</p>
+                  </section>
+                  <section>
+                    <h4>Recipe App</h4>
+                    <a target="_blank" href="https://vast-cliffs-63410.herokuapp.com/recipe">Recipe App</a>
+                    <p>This recipe app is a great place for you to collaborate with friends and family on your favorite recipes. Simply create a profile and begin adding! A full stack application hosted on Heroku, utilizing Express, Node.js, Mongoose, MongoDB, EJS, and jQuery utilizing REST API routes.</p>
+                  </section>
+                  <section>
+                    <h4>Board's Up</h4>
+                    <a target="_blank" href="https://boardsup.herokuapp.com/">Board's Up</a>
+                    <p>Board's Up is a place to store and locate your favorite skate/surf/snowboard spots. A full stack application integrated with Google Maps API, utlizing AngularJS, Mongoose, and Node.js</p>
+                  </section>
+                </div>
+
               </div>
             </div>
-            <div id="contact">
+            <div id="experience" class="jumbotron">
+              <div class="jumbotron">
+                <h3>Experience</h3>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators mt-4">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="d-block w-100">
+                        <h4>RigUp</h4>
+                        <h5>Customer Success Manager / Program Manager</h5>
+                        <ul>
+                          <li>Built and grew the RigUp Connect program from $1.1M/month in revenue to ~$6.5M/month, tailoring specific accounts to benefit each client individually</li>
+                          <li>Collaborated with product/engineering team to build a new client-facing invoicing portal based on customer feedback and input, decreasing internal administrative time by 60%</li>
+                          <li>Spearheaded the sale and initial growth of a major account from $17,000 to $350,000 a month over a 6-month period, increasing client efficiency while decreasing spend within specific divisions</li>
+                          <li>Collaborated cross-functionally with product/engineering and sales teams to update product features that enhanced UX and enabled more user functionality, increasing traffic by 300%</li>
+                          <li>Responsible for the growth of vendor user base, with 62 net new vendors submitting invoices for payment in 2019, totaling ~$2.3M in net revenue</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-block w-100">
+                        <h4>Halliburton</h4>
+                        <h5>Engineer</h5>
+                        <ul>
+                          <li>Conducted onsite supervision of the Measurement-While-Drilling (MWD) process, including tool preparations, data acquisition, log generation and Quality Control (QC), and delivery of services to the customer</li>
+                          <li>Implemented an Excel program to collect large datasets from different locations and automate spreadsheet creation, saving time and eliminating potential for human error</li>
+                          <li>Provided client with real-time analytical reports on current drilling parameters to ensure all equipment onsite was functioning properly, limiting costly downtime</li>
+                          <li>Increased revenue quarter-over-quarter by offering advanced analytical and downhole tools to the client, selling a more robust end product and increased drilling efficiency across all aspects of drilling operations</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-block w-100">
+                        <h4>Range Resources</h4>
+                        <h5>Operations Engineer</h5>
+                        <ul>
+                          <li>Achieved full-time position of Ops Engineer after successfully completing a 3-month internship</li>
+                          <li>Analyzed well files and implemented a plan of action, increasing production by 20% across a 6-month period</li>
+                          <li>Observed that installing a new pump could cost ~$65K and determined the most cost-efficient routes to bring wells back online after analyzing past records of assets, presenting findings to management</li>
+                          <li>Worked with a region’s main engineer to monitor function and performance of oil wells based on daily incoming metrics; noted any underperforming wells and communicated with foreman to solve the issue and improve production</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <div id="contact" class="jumbotron">
               <h3>Contact</h3>
             </div>
           </div>
         </div>
+        <nav class="d-none d-xl-block col-xl-2 bd-toc">
+          <ul class="section-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/crzytaghi" target="_blank" rel="noopener" aria-label="GitHub"></a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
     </div>
