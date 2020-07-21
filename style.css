@@ -2,6 +2,15 @@
   background-color: rgb(150,150,150);
 } */
 
+.container-fluid {
+  background-color: rgb(30,32,40);
+}
+
+.list-group a {
+  background-color:rgb(30,32,40);
+  color: ghostwhite;
+}
+
 .bd-toc {
   @supports (position: sticky) {
     position: sticky;
